@@ -1,6 +1,6 @@
 function generateList(array) {
     let s = "<ul>";
-    for (let i = 0, count = array.length; i < count; i++) {
+    for (let i = 0; i < array.length; i++) {
         let row = array[i];
         if (Array.isArray(row)) {
             s += `<li>${generateList(row)}</li>`
