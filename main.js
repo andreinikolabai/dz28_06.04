@@ -1,3 +1,6 @@
+let array = [1, 2, [1.1, 1.2, 1.3], 3];
+let s = generateList(array);
+
 function generateList(array) {
     let s = "<ul>";
     for (let i = 0; i < array.length; i++) {
@@ -11,6 +14,4 @@ function generateList(array) {
     return s;
 }
 
-let array = [1, 2, [1.1, 1.2, 1.3], 3];
-let s = generateList(array);
 document.body.innerHTML = s;
